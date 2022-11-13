@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #CECECE;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #454545;
+}
+
+.fa-cart-shopping {
+    transform: scale(2);
+}
+
+#landing {
+    background-image: url(./Assets/pexels-brett-sayles-2475235.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1100px;
+}
+
+.capture-text {
+    padding-top: 150px;
+    padding-left: 150px;
+}
+
+.capture-text-1 {
+    font-family: 'Kolker Brush', cursive;
+    font-size: 100px;
+    color: #E5E4E2;
+}
+
+.capture-text-2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 32px;
+    color: #E5E4E2;
+}
+
+.capture-text-3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    color: #E5E4E2;
+    padding-top: 16px;
+}
+
+.capture-text-shop {
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 16px;
+    color: #E5E4E2;
+    background-color: #454545;
+    animation: rise-capture-text 5s ease;
+    border: transparent;
+}
+
+.capture-text-shop:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: -7px 5px 3px #CECECE;
+}
+
+.capture-text-shop:hover .arrow {
+    animation: capture-arrow 700ms ease-in-out;
+}
+
+@keyframes capture-arrow{
+    50%{
+        padding-left: 10px;
+    }
+    100%{
+        padding: 0;
+    }
+}
+
+@keyframes rise-capture-text {
+    0% {
+        margin-top: 500px;
+    }
+
+    50% {
+        margin-top: 0px;
+    }
+    
+    100% {
+        margin-top: 30px;
+    }
+}
+
+li:hover {
+    text-decoration: line-through;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Noto sans', cursive;
+}
