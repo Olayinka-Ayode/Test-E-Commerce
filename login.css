@@ -69,8 +69,8 @@ button a {
     text-decoration: none;
 }
 
-button a:visited {
-    color: inherit;
+a:visited {
+    color: initial;
     text-decoration: none;
 }
 
